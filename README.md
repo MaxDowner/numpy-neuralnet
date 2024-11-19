@@ -1,0 +1,1 @@
+This project is an attempt to recreate the Neural Net shown in this video https://www.youtube.com/watch?v=aircAruvnKk&list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi using numpy.
