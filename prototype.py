@@ -1,4 +1,6 @@
 import numpy as np
+import pandas as pd
+import matplotlib as plt
 
 # import and transform the data
 # probably using pandas
