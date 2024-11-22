@@ -10,6 +10,8 @@ import matplotlib as plt
 # I'm going to import from a csv included in the program files
 # May be 4 csvs in 1 cvs so extra transformation required
 
+df = pd.read_csv('Neural_Nets/3b1bnumpy/Programs/mnist_test.csv')
+
 # transform
 # should be minimal transformation required considering the data set, will learn more as I go
 # okay making sense of, and transforming, the dataset will require some work. I have no experience with the IDX file format.
