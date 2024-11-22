@@ -10,13 +10,14 @@ import matplotlib as plt
 # I'm going to import from a csv included in the program files
 # May be 4 csvs in 1 cvs so extra transformation required
 
-df = pd.read_csv('Neural_Nets/3b1bnumpy/Programs/mnist_test.csv')
+raw_test_data = pd.read_csv('Neural_Nets/3b1bnumpy/Programs/mnist_test.csv')
+raw_training_data = pd.read_csv('Neural_Nets/3b1bnumpy/Programs/mnist_train.csv')
 
 # transform
 # should be minimal transformation required considering the data set, will learn more as I go
 # okay making sense of, and transforming, the dataset will require some work. I have no experience with the IDX file format.
 # the dataset can be found on kaggle as a csv,
-# as the purpose of this excercise is more so to understand NN than the IDX file format, I'll be downloading that insteas of transforming
+# as the purpose of this excercise is more so to understand NN than the IDX file format, I'll be downloading that instead of transforming
 
 # structure
 # input is 28*28 grayscale pixels(0-255?), thus 784 input neurons
@@ -32,7 +33,13 @@ df = pd.read_csv('Neural_Nets/3b1bnumpy/Programs/mnist_test.csv')
 # '''
 # create
 # a matrix with size ? and populate it with random numbers between ? and ?
-# np.random.rand
+initial_weights = np.random.rand(raw_training_data.shape()) # need to add additional params to define the random numbers, and consult style guide for variables
+
+
+
+
+
+
 # np.multiply(mmatrix1,mmatrix2)
 
 # loss function
