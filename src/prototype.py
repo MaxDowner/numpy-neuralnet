@@ -19,6 +19,14 @@ raw_training_data = pd.read_csv('Neural_Nets/3b1bnumpy/Programs/mnist_train.csv'
 # the dataset can be found on kaggle as a csv,
 # as the purpose of this excercise is more so to understand NN than the IDX file format, I'll be downloading that instead of transforming
 
+# lets write the format of the data
+# each row of the csv file represents 1 picture, apart from the first row which gives column names
+# order is that each row of the file itterates through every column in the first of the image, then second, then third etd
+# or, i*j, itterate through j 1-28 then increment i
+
+# in what format do we want it?
+
+
 # structure
 # input is 28*28 grayscale pixels(0-255?), thus 784 input neurons
 # 2 hidden layers of 16
