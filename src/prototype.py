@@ -9,8 +9,8 @@ import pandas as pd
 # I'm going to import from a csv included in the program files
 # May be 4 csvs in 1 cvs so extra transformation required
 
-raw_test_data = pd.read_csv('Neural_Nets/3b1bnumpy/Programs/mnist_test.csv')
-raw_training_data = pd.read_csv('Neural_Nets/3b1bnumpy/Programs/mnist_train.csv')
+raw_test_data = pd.read_csv('../dataset/mnist_test.csv')
+raw_training_data = pd.read_csv('../dataset/mnist_train.csv')
 
 # transform
 # should be minimal transformation required considering the data set, will learn more as I go
@@ -40,7 +40,7 @@ raw_training_data = pd.read_csv('Neural_Nets/3b1bnumpy/Programs/mnist_train.csv'
 # '''
 # create
 # a matrix with size ? and populate it with random numbers between ? and ?
-initial_weights = np.random.rand(raw_training_data.shape()) # need to add additional params to define the random numbers, and consult style guide for variables
+# initial_weights = np.random.rand(raw_training_data.shape()) # need to add additional params to define the random numbers, and consult style guide for variables
 
 
 
