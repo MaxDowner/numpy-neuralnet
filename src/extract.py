@@ -5,5 +5,6 @@
 
 import pandas as pd
 
-raw_test_data = pd.read_csv('../dataset/mnist_test.csv')
-raw_training_data = pd.read_csv('../dataset/mnist_train.csv')
+def extract():
+    raw_test_data = pd.read_csv('../dataset/mnist_test.csv')
+    raw_training_data = pd.read_csv('../dataset/mnist_train.csv')
