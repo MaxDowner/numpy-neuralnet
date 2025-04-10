@@ -5,10 +5,18 @@ import pandas as pd
 
 # put tests in a class
 
-@pytest.mark.skip(reason="extract takes a long time")
-def test_extract():
+@pytest.mark.skip
+def test_extract_object_type():
     # arrange
     # act
     result = extract()
     # assert
     assert (isinstance(result[0], pd.DataFrame) & isinstance(result[1], pd.DataFrame))
+
+
+def test_extract_shape():
+    # arrange
+    # act
+    result = extract()
+    # assert
+    assert (result[0].shape == (10000, 785)) & (result[1].shape == (60000, 785))
